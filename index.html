@@ -3,224 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brussels Munch — A Friendly Kink & BDSM Social Since 2010</title>
+    <title>Brussels Munch — Safe & Respectful Kink Socials</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .lang-content { display: none; }
-        .lang-content.active { display: block; }
-    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-rose-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
 
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <span class="text-xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-500">
-                    BRUSSELS MUNCH
-                </span>
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="https://secure.gravatar.com/avatar/83160b3b95ba038dc279ea1e57c3a556/?s=140&d=identicon" alt="Brussels Munch" class="w-10 h-10 rounded-full border border-slate-800 p-0.5 bg-slate-900 shadow-lg" />
+                <span class="text-sm font-black tracking-widest text-white uppercase hidden sm:inline-block">BRUSSELS MUNCH</span>
             </div>
             
-            <div class="flex bg-slate-800 p-1 rounded-lg border border-slate-700 text-sm">
-                <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1.5 rounded-md font-medium transition-all duration-200 bg-rose-600 text-white">EN</button>
-                <button onclick="setLanguage('nl')" id="btn-nl" class="px-3 py-1.5 rounded-md font-medium transition-all duration-200 text-slate-400 hover:text-white">NL</button>
-                <button onclick="setLanguage('fr')" id="btn-fr" class="px-3 py-1.5 rounded-md font-medium transition-all duration-200 text-slate-400 hover:text-white">FR</button>
+            <div class="flex items-center space-x-6">
+                <nav class="flex space-x-4 text-xs font-mono tracking-wider">
+                    <a href="#events" class="text-slate-400 hover:text-white transition-colors">Events</a>
+                    <a href="terms.html" class="text-slate-400 hover:text-white transition-colors">Terms</a>
+                </nav>
+                
+                <div class="flex bg-slate-900 border border-slate-800 p-1 rounded-xl text-xs font-mono">
+                    <a href="index.html" class="px-2.5 py-1 rounded-lg font-bold bg-rose-600 text-white shadow">EN</a>
+                    <a href="index-nl.html" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white transition-all">NL</a>
+                    <a href="index-fr.html" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white transition-all">FR</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <div id="lang-en" class="lang-content active">
-        <section class="py-20 text-center max-w-4xl mx-auto px-4">
-            <span class="inline-block bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Since 2010</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">An informal, respectful get-together around BDSM & Kink.</h1>
-            <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                A safe, completely vanilla space to meet people, make friends, and chat about alternative lifestyles openly. No dress code, no play, just human connection.
-            </p>
-            <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#about" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 font-semibold rounded-lg transition-colors shadow-lg shadow-rose-600/20">Learn More</a>
-                <a href="#terms" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg border border-slate-700 transition-colors">Participation Terms</a>
+    <section id="events" class="relative py-16 px-4 flex flex-col justify-center min-h-[75vh]">
+        <div class="max-w-6xl mx-auto w-full text-center mb-12 relative z-10">
+            <h1 class="text-3xl md:text-5xl font-black text-white tracking-tight leading-none">Brussels Alternative Spaces</h1>
+            <p class="text-slate-400 text-sm max-w-md mx-auto mt-4 mb-6">Active multilingual tracks since 2010. Fully vanilla, safe public socials.</p>
+            <div class="pt-2">
+                <a href="terms.html" class="px-6 py-3 bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 text-xs font-bold font-mono tracking-wide rounded-xl transition-all">VIEW CODE OF ETHICS ↓</a>
             </div>
-        </section>
+        </div>
 
-        <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8" id="about">
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-rose-500/5 rounded-full blur-2xl"></div>
-                <h3 class="text-2xl font-bold mb-2 text-rose-400">Brussels Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Meets every last Tuesday of the month (Except Dec) • 18:30 – 22:00</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    A welcoming event where you can find French, Dutch, and English spoken dynamically. Perfect for exploring open conversations inside a safe public downtown venue. Free entry (just pay what you consume).
-                </p>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 mb-6">
-                    <span class="text-xs font-bold uppercase text-slate-400 tracking-wider block mb-1">Upcoming 2026 Dates</span>
-                    <p class="font-mono text-sm text-amber-400">July 28 • Aug 25 • Sept 29 • Oct 28</p>
+        <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-8 relative z-10">
+            <div class="relative group rounded-3xl overflow-hidden border border-slate-800/80 shadow-2xl h-[450px] flex flex-col justify-end p-8 bg-[url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/10 transition-opacity group-hover:opacity-90"></div>
+                <div class="relative z-10 space-y-3">
+                    <span class="text-xs font-mono font-bold text-rose-400 uppercase tracking-widest block">Track One</span>
+                    <h2 class="text-3xl font-black text-white">The Main Munch</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed max-w-sm">Engage with the wider regional community. Open discussions across English, Dutch, and French settings in a casual lounge environment.</p>
+                    <div class="pt-2 text-xs text-amber-400 font-mono">Meets every last Tuesday from 18:30</div>
                 </div>
             </div>
 
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl"></div>
-                <h3 class="text-2xl font-bold mb-2 text-amber-400">Brussels Newbies Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Before the main event • 18:15 – 19:30</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    Feeling anxious about taking your first step? Our team hosts a restricted small-group discussion in English to guide you safely through the concepts, etiquette, and introduction to the local community.
-                </p>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 mb-6">
-                    <span class="text-xs font-bold uppercase text-slate-400 tracking-wider block mb-1">Format</span>
-                    <p class="text-sm text-slate-300">Moderated in English. Our team is fluent in EN, FR, and NL.</p>
+            <div class="relative group rounded-3xl overflow-hidden border border-slate-800/80 shadow-2xl h-[450px] flex flex-col justify-end p-8 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/10 transition-opacity group-hover:opacity-90"></div>
+                <div class="relative z-10 space-y-3">
+                    <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest block">Track Two</span>
+                    <h2 class="text-3xl font-black text-white">The Newbie Circle</h2>
+                    <p class="text-slate-300 text-xs leading-relaxed max-w-sm">A limited group conversation designed to reduce first-time stress. Understand group ethics, rules, and network comfortably.</p>
+                    <div class="pt-2 text-xs text-rose-400 font-mono">Early session opens at 18:15</div>
                 </div>
             </div>
-        </section>
-
-        <section class="max-w-4xl mx-auto px-4 py-12" id="terms">
-            <h2 class="text-3xl font-bold mb-6 text-center border-b border-slate-800 pb-4">Participation Rules</h2>
-            <div class="space-y-6 text-slate-300 text-sm leading-relaxed">
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">01</div>
-                    <div><strong>Vanilla Setting:</strong> We meet in an ordinary public venue. You must wear regular street attire. No explicit BDSM play or tools are permitted.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">02</div>
-                    <div><strong>Privacy & Ethics:</strong> Photography or digital logging is completely prohibited. Respect anonymity and never message fellow attendees unexpectedly prior to gatherings.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">03</div>
-                    <div><strong>Age Limit:</strong> Absolute strict attendance threshold for ages 18+. Verification can be requested.</div>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center bg-slate-800 p-8 rounded-xl border border-slate-700">
-                <h4 class="text-xl font-bold mb-2">Want to attend?</h4>
-                <p class="text-slate-400 text-sm mb-6">To maintain high-quality safety, the hidden location is exclusively shared with approved sign-ups.</p>
-                <a href="https://fetlife.com" target="_blank" class="px-6 py-2.5 bg-amber-500 text-slate-900 font-bold rounded-lg hover:bg-amber-400 transition-colors">Find us on FetLife</a>
-            </div>
-        </section>
-    </div>
-
-
-    <div id="lang-nl" class="lang-content">
-        <section class="py-20 text-center max-w-4xl mx-auto px-4">
-            <span class="inline-block bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Sinds 2010</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">Een informele, respectvolle bijeenkomst rond BDSM & Kink.</h1>
-            <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                Een veilige, volledig "vanilla" omgeving om mensen te ontmoeten, vrienden te maken en openlijk te praten over alternatieve levensstijlen. Geen dresscode, geen play, gewoon menselijk contact.
-            </p>
-            <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#about" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 font-semibold rounded-lg transition-colors">Meer Informatie</a>
-                <a href="#terms" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg border border-slate-700 transition-colors">Deelnamevoorwaarden</a>
-            </div>
-        </section>
-
-        <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold mb-2 text-rose-400">Brussels Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Elke laatste dinsdag van de maand (behalve dec) • 18:30 – 22:00</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    Een gastvrij evenement waar flexibel Nederlands, Frans en Engels wordt gesproken. Perfect om open discussies te voeren in een veilige, openbare locatie in het centrum. Toegang is gratis (je betaalt alleen je eigen consumpties).
-                </p>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 mb-6">
-                    <span class="text-xs font-bold uppercase text-slate-400 tracking-wider block mb-1">Komende Data 2026</span>
-                    <p class="font-mono text-sm text-amber-400">28 juli • 25 aug • 29 sept • 28 okt</p>
-                </div>
-            </div>
-
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold mb-2 text-amber-400">Brussels Newbies Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Voorafgaand aan het hoofdevenement • 18:15 – 19:30</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    Vind je het spannend om die eerste stap te zetten? Ons team organiseert een kleinschalige groepsdiscussie in het Engels om je wegwijs te maken in de basisregels, etiquette en introductie tot de community.
-                </p>
-            </div>
-        </section>
-
-        <section class="max-w-4xl mx-auto px-4 py-12">
-            <h2 class="text-3xl font-bold mb-6 text-center border-b border-slate-800 pb-4">Gedragscode & Regels</h2>
-            <div class="space-y-6 text-slate-300 text-sm leading-relaxed">
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">01</div>
-                    <div><strong>Vanilla Omgeving:</strong> We ontmoeten elkaar in een normale publieke ruimte. Gewone kleding is verplicht. BDSM-materiaal of handelingen zijn niet toegestaan.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">02</div>
-                    <div><strong>Privacy & Anonimiteit:</strong> Foto's of opnames maken is strikt verboden. Respecteer elkaars privacy en stuur geen ongevraagde berichten voorafgaand aan het event.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">03</div>
-                    <div><strong>Leeftijd:</strong> Strikt toegankelijk vanaf 18 jaar en ouder.</div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <div id="lang-fr" class="lang-content">
-        <section class="py-20 text-center max-w-4xl mx-auto px-4">
-            <span class="inline-block bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Depuis 2010</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">Une rencontre informelle et respectueuse autour du BDSM & du Kink.</h1>
-            <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                Un espace sécurisant et entièrement "vanilla" pour faire des rencontres, lier des amitiés et discuter librement de styles de vie alternatifs. Pas de code vestimentaire, pas de jeux, juste du lien humain.
-            </p>
-            <div class="mt-10 flex flex-wrap gap-4 justify-center">
-                <a href="#about" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 font-semibold rounded-lg transition-colors">Plus d'informations</a>
-                <a href="#terms" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg border border-slate-700 transition-colors">Conditions de Participation</a>
-            </div>
-        </section>
-
-        <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold mb-2 text-rose-400">Brussels Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Chaque dernier mardi du mois (sauf déc) • 18h30 – 22h00</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    Un événement convivial où l'anglais, le français et le néerlandais s'entremêlent naturellement. L'occasion idéale pour échanger dans un lieu public sécurisé en centre-ville. L'entrée est gratuite (vous ne payez que vos boissons).
-                </p>
-                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 mb-6">
-                    <span class="text-xs font-bold uppercase text-slate-400 tracking-wider block mb-1">Prochaines Dates 2026</span>
-                    <p class="font-mono text-sm text-amber-400">28 juillet • 25 août • 29 sept • 28 oct</p>
-                </div>
-            </div>
-
-            <div class="bg-slate-800/50 border border-slate-800 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold mb-2 text-amber-400">Brussels Newbies Munch</h3>
-                <p class="text-sm text-slate-400 mb-4">Juste avant l'événement principal • 18h15 – 19h30</p>
-                <p class="text-slate-300 mb-6 text-sm leading-relaxed">
-                    Intimidé·e à l'idée de faire le premier pas ? Notre équipe anime une discussion en petit groupe (en anglais) pour vous présenter les codes de conduite, l'étiquette et vous guider dans le milieu.
-                </p>
-            </div>
-        </section>
-
-        <section class="max-w-4xl mx-auto px-4 py-12">
-            <h2 class="text-3xl font-bold mb-6 text-center border-b border-slate-800 pb-4">Règles & Code de Conduite</h2>
-            <div class="space-y-6 text-slate-300 text-sm leading-relaxed">
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">01</div>
-                    <div><strong>Cadre Vanilla :</strong> Nous nous réunissons dans un établissement public classique. Tenue de ville normale requise. Aucun jeu ou équipement de BDSM n'est toléré sur place.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">02</div>
-                    <div><strong>Vie Privée :</strong> Les photos et enregistrements sont strictement interdits. Respectez l'anonymat ; ne contactez pas massivement les participants avant les événements.</div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="text-rose-500 text-xl font-bold">03</div>
-                    <div><strong>Limite d'âge :</strong> Réservé strictement aux personnes majeures (18 ans et plus).</div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        function setLanguage(langCode) {
-            // Hide all text contents
-            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            // Un-highlight navigation buttons
-            ['en', 'nl', 'fr'].forEach(lang => {
-                const btn = document.getElementById('btn-' + lang);
-                btn.className = "px-3 py-1.5 rounded-md font-medium transition-all duration-200 text-slate-400 hover:text-white";
-            });
-
-            // Show current active state
-            document.getElementById('lang-' + langCode).classList.add('active');
-            
-            // Highlight selected button style
-            const activeBtn = document.getElementById('btn-' + langCode);
-            activeBtn.className = "px-3 py-1.5 rounded-md font-medium transition-all duration-200 bg-rose-600 text-white shadow";
-        }
-    </script>
+        </div>
+    </section>
 </body>
 </html>
