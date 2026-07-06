@@ -1,81 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participation Terms & Foundations — Brussels Munch</title>
+    <title>Participation Terms — Brussels Munch</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .lang-group { display: none; }
-        .lang-group.active { display: block; }
-    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-rose-500 selection:text-white min-h-screen">
-
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
     <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-900 px-4 md:px-8">
         <div class="max-w-6xl mx-auto h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition-opacity">
-                    <img src="https://secure.gravatar.com/avatar/83160b3b95ba038dc279ea1e57c3a556/?s=140&d=identicon" alt="Brussels Munch" class="w-10 h-10 rounded-full border border-slate-800 p-0.5 bg-slate-900 shadow-lg" />
-                    <span class="text-sm font-black tracking-widest text-white uppercase hidden sm:inline-block">BRUSSELS MUNCH</span>
-                </a>
+                <img src="https://secure.gravatar.com/avatar/83160b3b95ba038dc279ea1e57c3a556/?s=140&d=identicon" alt="Logo" class="w-10 h-10 rounded-full border border-slate-800" />
+                <span class="text-sm font-black tracking-widest text-white uppercase hidden sm:inline-block">BRUSSELS MUNCH</span>
             </div>
-            
             <div class="flex items-center space-x-6">
-                <nav class="flex space-x-4 text-xs font-mono tracking-wider">
-                    <a href="index.html" class="text-slate-400 hover:text-white transition-colors">← Back to Events</a>
-                </nav>
-                
+                <nav class="text-xs font-mono"><a href="index.html" class="text-slate-400 hover:text-white">← Events</a></nav>
                 <div class="flex bg-slate-900 border border-slate-800 p-1 rounded-xl text-xs font-mono">
-                    <button onclick="changeLanguage('en')" id="btn-en" class="px-2.5 py-1 rounded-lg font-bold bg-rose-600 text-white transition-all shadow">EN</button>
-                    <button onclick="changeLanguage('nl')" id="btn-nl" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white transition-all">NL</button>
-                    <button onclick="changeLanguage('fr')" id="btn-fr" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white transition-all">FR</button>
+                    <a href="terms.html" class="px-2.5 py-1 rounded-lg font-bold bg-rose-600 text-white shadow">EN</a>
+                    <a href="terms-nl.html" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white">NL</a>
+                    <a href="terms-fr.html" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:text-white">FR</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="lang-en" class="lang-group active">
-        <section class="max-w-6xl mx-auto px-4 py-24">
-            <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-xs font-mono font-bold text-rose-400 uppercase tracking-widest block mb-2">// Code of Conduct</span>
-                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Participation Foundations</h2>
-                <p class="text-xs text-slate-400 mt-2 font-mono">Strict rules maintained dynamically across all spaces to preserve community safety.</p>
+    <section class="max-w-6xl mx-auto px-4 py-24">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Participation Foundations</h2>
+            <p class="text-xs text-slate-400 mt-2 font-mono">Strict rules maintained dynamically across all spaces.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-rose-500/40 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 font-mono font-bold mb-4 group-hover:bg-rose-600 group-hover:text-white">01</div>
+                <h4 class="text-white font-bold text-base mb-2">Vanilla Setting</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">We meet in an ordinary public venue. You must wear regular street attire. No explicit BDSM play or tools are permitted.</p>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-rose-500/40 transition-all group duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 font-mono font-bold text-sm mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors">01</div>
-                    <h4 class="text-white font-bold text-base mb-2">Vanilla Setting</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed">We meet in an ordinary public venue. You must wear regular street attire. No explicit BDSM play or tools are permitted on site.</p>
-                </div>
-                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all group duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-mono font-bold text-sm mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">02</div>
-                    <h4 class="text-white font-bold text-base mb-2">Privacy & Ethics</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed">Photography or digital logging is completely prohibited. Respect anonymity and never message fellow attendees unexpectedly prior to gatherings.</p>
-                </div>
-                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-pink-500/40 transition-all group duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 font-mono font-bold text-sm mb-4 group-hover:bg-pink-600 group-hover:text-white transition-colors">03</div>
-                    <h4 class="text-white font-bold text-base mb-2">Age Limit</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed">Absolute strict attendance baseline threshold for adults aged 18 and older. Random identity checks can be requested by moderators.</p>
-                </div>
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-mono font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950">02</div>
+                <h4 class="text-white font-bold text-base mb-2">Privacy & Ethics</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Photography or digital logging is completely prohibited. Respect anonymity and never message attendees unexpectedly prior to gatherings.</p>
             </div>
-        </section>
-    </div>
-
-    <div id="lang-nl" class="lang-group">
-        <section class="max-w-6xl mx-auto px-4 py-24">
-            <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-xs font-mono font-bold text-rose-400 uppercase tracking-widest block mb-2">// Gedragscode</span>
-                <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Deelnamevoorwaarden</h2>
-                <p class="text-xs text-slate-400 mt-2 font-mono">Strikte regels die consequent worden gehandhaafd om de veiligheid te garanderen.</p>
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-pink-500/40 transition-all group">
+                <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 font-mono font-bold mb-4 group-hover:bg-pink-600 group-hover:text-white">03</div>
+                <h4 class="text-white font-bold text-base mb-2">Age Limit</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Absolute strict attendance baseline threshold for ages 18+. Proper age verification can be requested by the hosts.</p>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-rose-500/40 transition-all group duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 font-mono font-bold text-sm mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors">01</div>
-                    <h4 class="text-white font-bold text-base mb-2">Vanilla Omgeving</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed">We komen samen in een gewone openbare locatie. Alledaagse stadskleding is verplicht. Expliciete BDSM-praktijken of attributen zijn niet toegestaan.</p>
-                </div>
-                <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all group duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-mono font-bold text-sm mb-4 group-hover:bg-amber-500 group-hover:text-slate
+        </div>
+    </section>
+</body>
+</html>
